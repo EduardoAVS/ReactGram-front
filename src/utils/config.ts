@@ -1,6 +1,8 @@
 // API base URL
-export const api: string = "http://localhost:5000/api";
-export const uploads: string = "http://localhost:5000/uploads";
+const api_url = import.meta.env.VITE_API_BASE_URL
+
+export const api: string = `${api_url}/api`;
+export const uploads: string = `${api_url}/uploads`;
 
 // Tipagem para os métodos HTTP suportados
 type HttpMethod = "GET" | "POST" | "PUT" | "DELETE" | "PATCH";
