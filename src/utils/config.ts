@@ -2,7 +2,7 @@
 const api_url = import.meta.env.VITE_API_BASE_URL
 
 export const api: string = `${api_url}/api`;
-export const uploads: string = `${api_url}/uploads`;
+export const uploads: string = `${api_url}/public/uploads`;
 
 // Tipagem para os métodos HTTP suportados
 type HttpMethod = "GET" | "POST" | "PUT" | "DELETE" | "PATCH";
